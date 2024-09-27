@@ -1,9 +1,6 @@
 // util function that computes the fibonacci numbers
 type fibonacciFunction = (n: number) => number;
 
-/**
- * @type {fibonacciFunction}
- */
 const fibonacci: fibonacciFunction = function (n: number): number {
   if (n < 0) {
     return -1;
@@ -16,4 +13,4 @@ const fibonacci: fibonacciFunction = function (n: number): number {
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-module.exports = fibonacci;
+export default fibonacci;
